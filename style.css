@@ -1,0 +1,212 @@
+*,
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #1A2238;
+    width: auto;
+    color: #eaeaea; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: auto;
+    display: flex;
+}
+
+.logo-img {
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.logo.title {
+    cursor: pointer;
+}
+
+.logo:hover {
+    color: #e6ad74;
+    transition: all .5s ease 0s;
+    transform: rotate(2deg);
+}
+
+.btn-cta {
+    margin-right: 10px;
+    border: none;
+    font-size: 20px;
+    padding: 6px 12px;
+    background: #237fb8;
+    color: #eaeaea;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    padding: 20px;    
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+li:hover {
+    transition: all .5s ease 0s;
+    transform: rotate(2deg);
+}
+
+a { 
+    color: #eaeaea;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e6ad74;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.description { 
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.img-foto {
+    width: 100%;
+    max-width: 500px;
+    max-height: auto;
+}
+
+.parallax {
+    background-image: url('assets/yusuf-rambe.JPG');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.tentang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #1A2238;
+    color: #eaeaea;
+    padding: 25px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-item { 
+    text-align: center;
+    width: 25%;
+    min-height: 200px;
+    max-height: 300px;
+    background: #e9e7e7;
+    color: #222;
+    padding: 24px;
+    box-shadow: 3px 5px 7px 2px rgba(0,0,0,0.5);
+    opacity: 0.8;   
+} 
+
+.card-title {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.card-description {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.icon {
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+    padding: 4px;
+}
+
+.card-item:hover {
+    cursor: pointer;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: rgb(19, 83, 123);
+    color: #eaeaea;
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        flex-direction: column;
+        gap: 0;
+    }
+    .card-item {
+        width: 100%;  
+    }
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+    .img-foto {
+        padding: 0;
+    }
+    .into {
+        margin-top: 20px;
+    }
+    nav{
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #1A2238;
+        z-index: 9;
+    }
+    footer {
+        margin-bottom: 70px;
+        margin-top: 70px;
+    }
+}
