@@ -1,3 +1,1 @@
-# myIntroduce-website
-
-im trying to make my profil intro website
+training to making my profil intro website.
